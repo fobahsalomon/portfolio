@@ -1,251 +1,790 @@
-<!DOCTYPE HTML>
-<!--
-    Solid State by HTML5 UP ( Fobah N'gouan Salomon portfolio)
--->
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Fobah N'gouan Salomon - Portfolio Data Science</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-    <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Fobah N'gouan Salomon - Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
 
 </head>
-<body class="is-preload">
 
-<!-- Page Wrapper -->
-<div id="page-wrapper">
+<body class="index-page">
 
-    <!-- Header -->
-    <header id="header" class="alt">
-        <h1><a href="index.html">Fobah N'gouan Salomon</a></h1>
-        <nav>
-            <a href="#menu">Menu</a>
-        </nav>
-    </header>
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#skills"><i class="bi bi-lightning-charge navicon"></i> Skills</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#projects"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
+          <li><a href="#certifications"><i class="bi bi-images navicon"></i> Certifications</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
 
-    <!-- Menu -->
-    <nav id="menu">
-        <div class="inner">
-            <h2>Menu</h2>
-            <ul class="links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#certificats">Certificats</a></li>
-                <li><a href="#footer">Contact</a></li>
-
-            </ul>
-            <a href="#" class="close">Close</a>
-        </div>
-    </nav>
-
-<!-- Banner -->
-<section id="banner">
-    <div class="inner">
-        <h2>Fobah N'gouan Salomon</h2>
-        <p>Étudiant en Data Science • Passionné par la transformation des données en décisions</p>
+      <div class="social-links text-center">
+        <a href="https://github.com/fobahsalomon" class="github"><i class="bi bi-github"></i></a>
+        <!-- <a href="https://linkedin.com/in/TON-LIEN-ICI" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
     </div>
-</section>
 
-<!-- About -->
-<section id="about" class="wrapper spotlight style1">
-    <div class="inner">
-        <div class="content">
-            <h2 class="major">À propos</h2>
-            <p>
-                Je suis étudiant en Bachelor Data Science à l'African School of Economics, spécialisé dans l'analyse de données, 
-                le machine learning et la visualisation interactive. 
-                Curieux et rigoureux, je me suis formé à travers des projets concrets comme la digitalisation d’un processus d’inscription
-                et l’analyse de données commerciales.
-            </p>
-            <p>
-                Mon objectif est de mettre mes compétences techniques et mon sens de l’organisation au service de projets ambitieux 
-                et à fort impact. Je suis particulièrement intéressé par les domaines où la donnée peut contribuer à améliorer la prise de décision et optimiser les performances.
-            </p>
-            <a href="assets/fobah_salomon_cv.pdf" class="button icon solid fa-download">Télécharger mon CV</a>
-        </div>
+
     </div>
-</section>
 
+  </header>
 
+  <main class="main">
 
-    <!-- Projects -->
-    <section id="projets" class="wrapper alt style1">
-        <div class="inner">
-            <h2 class="major">Projets</h2>
-        <p>Voici une sélection de mes projets récents en data science et analyse de données.</p>
-            <section class="features">
-                <article>
-                    <a href="#" class="image"><img src="images/dashbord.png" alt="" /></a>
-                <div class="content">
-                    <h3 class="major">Suivi d'une colonie de vacances</h3>
-                    <p>Création d'un système complet d'inscription et de suivi via KoboToolbox et Google Looker Studio comprenant :</p>
-                    <ul>
-                        <li>Conception du formulaire de collecte interactif avec KoboToolbox</li>
-                        <li>Dashboard dynamique avec Looker Studio</li>
-                        <li>Visualisation des données en temps réel</li>
-                        <li> Réduction du temps d’inscription de 50 %</li>
-                    </ul>
-                    <a href="https://ee.kobotoolbox.org/x/8fort8cA" target="_blank" class="special">Voir le formulaire</a>
-                    <a href="https://lookerstudio.google.com/reporting/78e4dbfe-1ee5-4dc0-8d80-fd33e0355545" target="_blank" class="special">Voir le dashboard</a>
-                    <a href="https://github.com/fobahsalomon/colonie-camp-management/tree/main" class="special">plus de details</a>
-                </article>
-    
-            </section>
-            <ul class="actions">
-                <li><a href="https://github.com/fobahsalomon" class="button">Parcourir mes projets</a></li>
-            </ul>
-		</div>
-	</section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
 
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
 
-<!-- Skills -->
-    <section id="skills" class="wrapper spotlight style1">
-        <div class="inner">
-            <div class="content">
-            <h2 class="major">Compétences</h2>
+      <div class="hero-content">
 
-            <h3>Python</h3>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 85%;">85%</div>
-            </div>
+        <div class="container">
+          <div class="row align-items-center">
 
-            <h3>R</h3>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 75%;">75%</div>
-            </div>
-
-            <h3>Stata</h3>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 75%;">75%</div>
-            </div>
-
-            <h3>SQL</h3>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 75%;">75%</div>
-            </div>
-
-            <h3>Power BI / Looker Studio</h3>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 80%;">80%</div>
-            </div>
-
-            <h3>Machine Learning (scikit-learn)</h3>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 75%;">75%</div>
-            </div>
-
-            <h3>Visualisation de données</h3>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 85%;">85%</div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-
-<!-- certificats -->
-    <section id="certificats" class="wrapper alt style1">
-        <div class="inner">
-            <h2 class="major">Certificats</h2>
-            <section class="features">
-                <article>
-                <div class="content">
-                    <h3  class="major">Intro to Data Science in Python – University of Michigan (Coursera)</h3>
-                    <p>Cette spécialisation m’a permis d’acquérir des compétences pratiques en data science,
-                        incluant la manipulation avancée des données avec pandas, la visualisation avec matplotlib et seaborn, 
-                        ainsi que la mise en œuvre de techniques de machine learning avec scikit-learn.</p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/EY72SU00RFL7" class="special">Voir le certificat</a>
-                </article>
-                <article>
-                    <h3 class="major">Applied Plotting, Charting & Data Representation in Python – University of Michigan(Coursera)</h3>
-                    <p>Ce certificat m’a appris à concevoir des visualisations de données claires et percutantes,
-                        à choisir les graphiques adaptés aux types de données, et à utiliser matplotlib et seaborn 
-                        pour produire des visualisations professionnelles en Python.</p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/J7F4P5P1Z944" class="special">Voir le certificat</a>
-                </article>
-                <article>
-                    <h3 class="major">Applied Machine Learning in Python – University of Michigan(Coursera)</h3>
-                    <p>Ce cours m’a permis de maîtriser les étapes d’un projet de machine learning, de la préparation des données jusqu’à 
-                        l’évaluation des modèles. J’y ai appris à appliquer des techniques de classification, de régression et
-                        d’optimisation des hyperparamètres avec scikit-learn</p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/NZEUO5B5BXJ3" class="special"> voir le certificat</a>
-                </article>
-                 <article>
-                    <h3 class="major">Applied Text mining in Python – University of Michigan(Coursera)</h3>
-                    <p>Ce certificat m’a permis d’acquérir les compétences nécessaires pour analyser et traiter des données textuelles en Python. 
-                    J’y ai appris à appliquer des techniques de text mining, notamment la vectorisation des textes (TF-IDF), le nettoyage et la
-                    normalisation des corpus, ainsi que la mise en œuvre de modèles de classification et de clustering sur des données textuelles. 
-                    Le cours m’a également formé à l’utilisation de bibliothèques spécialisées telles que scikit-learn et NLTK.</p>
-                    <a href="https://coursera.org/verify/IRB71T4CFXWA" class="special"> voir le certificat</a>
-                </article>
-            </section>
-		</div>
-	</section>
-
-
-    <!-- contacts -->
-    <section id="footer" >
-        <div class="inner">
-            <h2 class="major">Contact</h2>
-            <p>Vous pouvez me contacter via le formulaire ci-dessous ou sur mes profils en ligne.</p>
-            <form method="post" action="https://formspree.io/f/xgvyjpna">
-                <div class="fields">
-                    <div class="field">
-                        <label for="name">Nom</label>
-                        <input type="text" name="name" id="name" />
-                    </div>
-                    <div class="field">
-                        <label for="email">Your Email</label>
-                        <input type="email" name="email" id="email" />
-                    </div>
-                    <div class="field">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="4"></textarea>
-                    </div>
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>Fobah <span class="accent-text">Salomon</span></h1>
+                <h2>Data Scientist & Workflow Optimizer</h2>
+                <p class="lead">I specialize in <span class="typed" data-typed-items="Data Analysis, Machine Learning, No code tools"></span></p>
+                <p class="description">Turning complex data into actionable strategies and ideas into efficient processes with no-code automation</p>
+                <div class="hero-actions">
+                  <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+                  <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
-                <ul class="actions">
-                    <li><input type="submit" value="Send Message" /></li>
-                </ul>
-            </form>
-            <ul class="contact">
-                <li class="icon solid fa-home">
-                    Côte d'Ivoire<br />
-                    Abidjan-Bingerville<br />
-                </li>
-                <li class="icon solid fa-phone">(+225) 07-87-89-43-78</li>
-                <li class="icon brands fa-github">
-                    <a href="https://github.com/fobahsalomon" target="_blank">Mon GitHub</a>
-                </li>
-                <li class="icon brands fa-linkedin">
-                    <a href="https://linkedin.com/in/n-gouan-salomon-fobah-122b83373" target="_blank">Mon LinkedIn</a>
-                </li>
-                <li class="icon solid fa-envelope">
-                    <a href="mailto:fobahngouansalomon@gmail.com">fobahngouansalomon@gmail.com</a>
-                </li>
-            </ul>
-            <ul class="copyright">
-                <li>Fobah N'gouan Salomon. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
+
+
+                <div class="social-links">
+                  <a href="https://github.com/fobahsalomon"><i class="bi bi-github"></i></a>
+                  <!-- <a href="https://linkedin.com/in/TON-LIEN-ICI"><i class="bi bi-linkedin"></i></a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="assets/img/profile/profile-2.jpeg" alt="Fobah Salomon" class="profile-image">
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <!-- Profile Card -->
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-image">
+                  <img src="assets/img/profile/profile-1.jpeg" alt="Profile Image" class="img-fluid">
+                </div>
+                <div class="profile-badge">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+              </div>
+
+              <div class="profile-content">
+                <h3>Fobah N'gouan Salomon</h3>
+                <p class="profession">Data Scientist & Workflow Optimizer</p>
+
+                <div class="contact-links">
+                  <a href="mailto:fobahngouansalomon@gmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    fobahngouansalomon@gmail.com
+                  </a>
+                  <a href="tel:+2250787894378" class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    +225 07 87 89 43 78
+                  </a>
+                  <a href="#" class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    Abidjan-Bingerville, CI
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Text -->
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <span class="badge-text">About Me</span>
+                <h2>Transforming Data into Actionable Insights</h2>
+              </div>
+
+              <div class="description">
+                <p>I am a data enthusiast passionate about turning complex data into actionable strategies. I love making data speak, analyzing and interpreting it to create insights that help people and teams make smarter decisions.</p>
+                <p>While I can streamline workflows with no-code tools. I enjoy creating solutions that save time, reduce errors, and help teams focus on what truly matters.</p>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Specialization</span>
+                    <span class="detail-value">Data Scientist &amp; Workflow Optimizer</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Experience Level</span>
+                    <span class="detail-value">junior</span>
+                  </div>
+                </div>
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">Data Science, African school of Economicsn>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Languages</span>
+                    <span class="detail-value">French, English</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-section">
+                <a href="assets/docs/FobahSalomon-CV-.pdf" class="btn btn-primary">
+                  <i class="bi bi-download"></i>
+                  Download Resume
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- /About Section -->
 
-</div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Turning data into actionable insights is my specialty</p>
+      </div><!-- End Section Title -->
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <!-- Programming & Data Analysis -->
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Programming & Data Analysis</h3>
+              <div class="skills-animation">
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Python</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Data analysis, automation, and scripting</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>R</h4>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Statistical analysis and visualization</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Stata</h4>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Econometrics and data modeling</div>
+                </div>
+
+              </div>
+            </div><!-- End Programming & Data Analysis -->
+          </div>
+
+          <!-- Tools & No-Code -->
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>Tools & No-Code</h3>
+              <div class="skills-animation">
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Excel</h4>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Data manipulation and reporting</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Power BI/ Tableau/ Graphana/ Looker Studio</h4>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Interactive dashboards and visualization</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>No-Code Tools</h4>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Workflow automation and process optimization</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>SQL</h4>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Database querying and management</div>
+                </div>
+
+              </div>
+            </div><!-- End Tools & No-Code -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Education, certifications, and projects highlighting my journey as a data science enthusiast.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <!-- Left column with summary and contact -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+              <div class="profile-img mb-4">
+                <img src="assets/img/profile/profile-3.jpeg" alt="Profile" class="img-fluid rounded">
+              </div>
+
+              <h3>Professional Summary</h3>
+              <p>Data enthusiast passionate about transforming raw information into actionable strategies. Skilled in Python, R, Stata, SQL, and no-code tools. I enjoy creating solutions that make teams more efficient and help decision-making.</p>
+
+              <h3 class="mt-4">Contact Information</h3>
+              <ul class="contact-info list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> Abidjan-Bingerville, Côte d'Ivoire</li>
+                <li><i class="bi bi-envelope"></i> fobahngouansalomon@gmail.com</li>
+                <li><i class="bi bi-phone"></i> +225 07 87 89 43 78</li>
+                <!-- <li><i class="bi bi-linkedin"></i> linkedin.com/in/salomon</li> -->
+                <li><i class="bi bi-github"></i> github.com/fobahsalomon</li>
+              </ul>
+
+              <div class="skills-animation mt-4">
+                <h3>Technical Skills</h3>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Python</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Stata</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>R</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>SQL</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>No-Code Tools / Excel / Dashbord tools</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column with experience and education -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+
+            <!-- Projects / Experience Section -->
+            <div class="resume-section" data-aos="fade-up">
+              <h3><i class="bi bi-briefcase me-2"></i>Professional Experience & Collaborations</h3>
+
+              <div class="resume-item">
+                <h4>Collaboration – UNHCR (School Research Project)</h4>
+                <h5>2024</h5>
+                <ul>
+                  <li>Contributed to a research project on refugee needs by designing questionnaires and collecting structured data.</li>
+                  <li>Processed and organized datasets to generate actionable insights for program planning.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Data Assistant – Administrative Project (Custom Excel Tool)</h4>
+                <h5>2025</h5>
+                <ul>
+                  <li>Designed a comprehensive Excel tool to centralize and manage operational plans and processes for a customs office.</li>
+                  <li>Improved workflow efficiency through structured data input, automated updates, and clear reporting.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+
+              <div class="resume-item">
+                <h4>Bachelor in Data science</h4>
+                <h5>2023 – Present</h5>
+                <p class="company"><i class="bi bi-building"></i> African School of Economics, Abidjan</p>
+                <p>Focused on data analysis, statistics, and econometrics.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>High School Diploma</h4>
+                <h5>2020 – 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Lycée d'Excellence Alassane Ouattara, Grand-Bassam</p>
+                <p>Science Track (C series)</p>
+              </div>
+
+
+            <!-- Certifications Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
+              <h3><i class="bi bi-award me-2"></i>Certifications</h3>
+
+              <div class="resume-item">
+                <h4>Applied Data Science with Python Specialization</h4>
+                <h5> <a href="https://www.coursera.org/account/accomplishments/specialization/Y23L3G8K0SNF" target="_blank">University of Michigan</a></h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>Data Analysis with R Programming</h4>
+                <h5><a href="https://coursera.org/share/f2ff280ff5d1033863a00f6089f18f47" target="_blank">Google (Coursera)</a></h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>Applied Data Science Lab</h4>
+                <h5><a href="https://www.credly.com/badges/063ae1e0-e2f0-4ae0-8a30-b552cad08c89/public_url" target="_blank">WorldQuant University</a></h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>Oracle Cloud Infrastructure 2025 Certified Data Science Professional</h4>
+                <h5><a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=3C43A9F9C5A92D468604B8204E53980940CD05B4CAFDFDDA02B2DC09D8FCA7A8" target="_blank">Oracle</a></h5>
+              </div>
+            </div>
+
+
+            </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>
+          A curated selection of projects where I design data workflows, 
+          build analytics tools, and develop practical solutions with clean engineering and thoughtful visualization. 
+          Each project reflects an impact-driven approach, from rapid prototyping to polished, deployment-ready outputs.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row">
+            <div class="col-lg-3 filter-sidebar">
+              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <ul class="portfolio-filters isotope-filters">
+                  <li data-filter="*" class="filter-active">All Projects</li>
+                  <li data-filter=".filter-analytics">Data Analytics</li>
+                  <li data-filter=".filter-Ml">Machine Learning</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-analytics">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/colonie_1.png" class="img-fluid" alt="Colony Dashboard Preview" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Data Analytics</span>
+                        <h4>Colony Registration Analytics – 2025</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/colonie_1.png" class="glightbox" title="Colony Registration Analytics – 2025">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="colony-analytics-details.html" title="More Details">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Projects Item -->
+
+              </div><!-- End Projects Container -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /Projects Section -->
+
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="services section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <p>Core credentials that strengthen my expertise in Data Science and Applied Machine Learning.</p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+
+          <!-- Applied Data Science Specialization -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <a href="https://www.coursera.org/account/accomplishments/specialization/Y23L3G8K0SNF" 
+                target="_blank" 
+                class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="https://www.coursera.org/account/accomplishments/specialization/Y23L3G8K0SNF" target="_blank">
+                  Applied Data Science with Python
+                </a>
+              </h3>
+              <p>University of Michigan – Complete Specialization in Python-based Data Science and ML.</p>
+            </div>
+          </div>
+
+          <!-- Google Data Analysis with R -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+              <a href="https://coursera.org/share/f2ff280ff5d1033863a00f6089f18f47" 
+                target="_blank" 
+                class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="https://coursera.org/share/f2ff280ff5d1033863a00f6089f18f47" target="_blank">
+                  Data Analysis with R Programming
+                </a>
+              </h3>
+              <p>Google – Foundations of data analysis using R and tidyverse tooling.</p>
+            </div>
+          </div>
+
+          <!-- WorldQuant Applied Data Science Lab -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <a href="https://www.credly.com/badges/063ae1e0-e2f0-4ae0-8a30-b552cad08c89/public_url" 
+                target="_blank" 
+                class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="https://www.credly.com/badges/063ae1e0-e2f0-4ae0-8a30-b552cad08c89/public_url" target="_blank">
+                  Applied Data Science Lab
+                </a>
+              </h3>
+              <p>WorldQuant University – Project-based machine learning and statistical modeling.</p>
+            </div>
+          </div>
+
+          <!-- Oracle Cloud Data Science Professional -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-cloud-check"></i>
+              </div>
+              <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=3C43A9F9C5A92D468604B8204E53980940CD05B4CAFDFDDA02B2DC09D8FCA7A8" 
+                target="_blank" 
+                class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=3C43A9F9C5A92D468604B8204E53980940CD05B4CAFDFDDA02B2DC09D8FCA7A8" target="_blank">
+                  Oracle Data Science Professional
+                </a>
+              </h3>
+              <p>Oracle Cloud – Advanced certification in cloud-based data science workflows.</p>
+            </div>
+          </div>
+
+          <!-- Cisco Apply AI: Analyze Customer Reviews -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <a href="https://www.credly.com/badges/aa72462f-15db-44db-8f34-ad3cecff25c0" 
+                target="_blank"
+                class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="https://www.credly.com/badges/aa72462f-15db-44db-8f34-ad3cecff25c0" target="_blank">
+                  Apply AI: Analyze Customer Reviews
+                </a>
+              </h3>
+              <p>Cisco NetAcad – Practical introduction to NLP and sentiment analysis workflows.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Certifications Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>You can reach me via the form below or through my online profiles.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Location</h4>
+                  <p>Abidjan-Bingerville</p>
+                  <p>Côte d'Ivoire</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone</h4>
+                  <p>+225 07 87 89 43 78</p>
+                  <p>+225 01 03 45 74 19</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email</h4>
+                  <p>fobahngouansalomon@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+              <p>Feel free to contact me for collaborations, questions, or professional inquiries.</p>
+
+              <form action="https://formspree.io/f/xgvyjpna" method="post" class="php-email-form">
+                <input type="hidden" name="_next" value="index.html#contact" />
+
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+<footer id="footer" class="footer position-relative">
+
+  <div class="container">
+    <div class="copyright text-center">
+      <p>© <span id="year"></span> <strong class="px-1">N'gouan salomon Fobah</strong>. All rights reserved.</p>
+    </div>
+  </div>
+
+</footer>
+
+<script>
+  // Set current year automatically
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
-</html>
 
+</html>
