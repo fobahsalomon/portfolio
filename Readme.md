@@ -1,83 +1,79 @@
-# 📁 Portfolio – Fobah N’gouan Salomon
+# Portfolio - Fobah N’gouan Salomon
 
-Bienvenue dans le dépôt de mon portfolio personnel.  
-Ce site présente mon parcours, mes compétences, mes projets et mes réalisations.  
-Il est hébergé directement via **GitHub Pages**.
+Data Science student focused on **machine learning, econometrics, and applied data systems**.
 
-🔗 **Version en ligne :** https://fobahsalomon.github.io/portfolio
+This portfolio serves as a curated entry point to my projects in data science, statistical modeling, and end-to-end analytics systems.
 
----
-
-## 🚀 Aperçu
-
-![Preview du site](assets/img/preview.png)  
-
+🔗 Live site: https://fobahsalomon.github.io/portfolio
 
 ---
 
-## 🧩 Fonctionnalités
+## 🚀 Purpose
 
-- Présentation personnelle
-- Liste de projets avec liens
-- Compétences techniques
-- Contact et réseaux sociaux
-- Interface responsive
-- Design simple et professionnel
+This portfolio is designed to:
 
----
-
-## 🛠️ Technologies utilisées
-
-- **HTML5**  
-- **CSS3**  
-- **JavaScript**  
-- **GitHub Pages** pour l’hébergement  
--
+- present selected data science and analytics projects
+- highlight applied machine learning and econometric work
+- demonstrate end-to-end data system thinking
+- provide a structured overview of my technical profile
 
 ---
 
-## 📂 Structure du projet
+## 📌 Featured Projects
 
-```bash
-/
-├── projets/
-├── index.html
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-└── README.md
+### 🔬 SurveyLens — Data Analytics System
+Live platform for HR and psychosocial survey analysis  
+- automated data cleaning and preprocessing  
+- psychological scoring models (Karasek, MBI, QVT)  
+- KPI generation and interactive dashboards  
+- exportable analytical reports  
 
-```
+👉 https://surveylens.streamlit.app/
 
-## 🔧 Installation locale
+---
 
-Pour lancer le site en local :
-```bash
-git clone https://github.com/fobahsalomon/portfolio.git
-cd portfolio
-```
-Ouvre ensuite index.html dans ton navigateur.
+### 📊 Cocody Rental Market Analysis
+Econometric modeling of housing prices in Abidjan  
+- regression-based hedonic pricing model  
+- interpretation of structural price drivers  
+- applied economic analysis  
 
-## 🌐 Déploiement
+---
 
-Le portfolio est automatiquement déployé via GitHub Pages :
+### 📈 Time Series Forecasting (SARIMA)
+Forecasting UK car sales using statistical modeling  
+- Box-Jenkins methodology  
+- stationarity testing and diagnostics  
+- model evaluation (RMSE comparison)  
 
-Pousser les modifications sur la branche main.
+---
 
-GitHub Pages reconstruit automatiquement la version en ligne.
+## 🧠 Technical Focus
 
+- Machine Learning (applied)
+- Econometrics & statistical inference
+- Time Series forecasting
+- Data pipelines & analytics systems
 
+---
 
-## 📬 Contact
+## 🛠 Core Stack
 
-Email : fobahngouansalomon@gmail.com
+Python · Pandas · NumPy · Scikit-learn  
+Statsmodels · Streamlit · Plotly  
+Git · GitHub Pages  
 
-GitHub : https://github.com/fobahsalomon
+---
 
-Localisation : Abidjan, Côte d’Ivoire
+## 🎯 Objective
 
-## 📌 Licence
+This portfolio supports applications for:
 
-Ce portfolio est disponible sous licence MIT.
-Vous êtes libre de l’utiliser comme modèle ou inspiration.
+- Data Science internships (applied / research)
+- AIMS program (Applied Mathematics / Data Science)
+- roles involving data analysis, modeling, and decision systems
+
+---
+
+📍 Abidjan, Côte d’Ivoire  
+🎓 Data Science student @ African School of Economics
