@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Palette du portfolio */
+    --cream: #F5EDE0;
+    --cream-dark: #EDE0CC;
+    --ink: #1C1917;
+    --copper: #8B6347;
+    --copper-light: #C4A882;
+    --paper: #FFFDF9;
+
+    /* Mapping shadcn */
+    --background: 37 51% 92%;
+    --foreground: 24 10% 10%;
+    --card: 36 30% 99%;
+    --card-foreground: 24 10% 10%;
+    --popover: 37 51% 92%;
+    --popover-foreground: 24 10% 10%;
+    --primary: 25 32% 41%;
+    --primary-foreground: 36 30% 99%;
+    --secondary: 36 48% 86%;
+    --secondary-foreground: 24 10% 10%;
+    --muted: 36 48% 86%;
+    --muted-foreground: 25 15% 35%;
+    --accent: 36 48% 86%;
+    --accent-foreground: 24 10% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 25 32% 80%;
+    --input: 25 32% 80%;
+    --ring: 25 32% 41%;
+    --radius: 0.25rem;
+    --sidebar-background: 37 51% 92%;
+    --sidebar-foreground: 24 10% 10%;
+    --sidebar-primary: 25 32% 41%;
+    --sidebar-primary-foreground: 36 30% 99%;
+    --sidebar-accent: 36 48% 86%;
+    --sidebar-accent-foreground: 24 10% 10%;
+    --sidebar-border: 25 32% 80%;
+    --sidebar-ring: 25 32% 41%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-brown antialiased;
+    font-family: "Syne", system-ui, -apple-system, sans-serif;
+  }
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+.reveal-delay-5 { transition-delay: 0.4s; }
+
+@keyframes bounce-hint {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
+.animate-bounce-hint {
+  animation: bounce-hint 2s ease-in-out infinite;
+}
