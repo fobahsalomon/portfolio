@@ -67,11 +67,11 @@ export default function ContactSection() {
                     <span className="w-9 h-9 flex-shrink-0 flex items-center justify-center bg-cream-dark group-hover:bg-paper/20 rounded-[4px] transition-colors">
                       <link.icon className="w-4 h-4 text-copper group-hover:text-paper" />
                     </span>
-                    <span className="flex flex-col">
+                    <span className="flex flex-col min-w-0 flex-1">
                       <span className="text-[0.62rem] uppercase tracking-[0.12em] text-ink/50 group-hover:text-paper/70">
                         {link.label}
                       </span>
-                      <span className="text-[0.83rem] text-ink group-hover:text-paper">{link.value}</span>
+                      <span className="text-[0.83rem] text-ink group-hover:text-paper break-words">{link.value}</span>
                     </span>
                   </Tag>
                 </Reveal>
