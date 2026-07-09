@@ -1,5 +1,5 @@
 // ============================================
-// PROJETS  MODIFIEZ ICI
+// PROJETS — MODIFIEZ ICI
 // ============================================
 // Structure de chaque projet :
 //   id: identifiant unique
@@ -40,17 +40,17 @@ export const projects: Project[] = [
       "assets/projects/surveylens-3.jpg",
     ],
     description: {
-      fr: "Application d'analyse automatisée de questionnaires RH basée sur le modèle de Karasek. Traitement complet des données : nettoyage, scoring, calcul d'indicateurs de risques psychosociaux. Déploiement via Streamlit avec visualisations interactives des scores par dimension et rapports exportables pour les directions RH.",
-      en: "Automated HR questionnaire analysis application based on the Karasek model. Complete data processing: cleaning, scoring, psychosocial risk indicator calculation. Deployed via Streamlit with interactive visualizations of scores by dimension and exportable reports for HR departments.",
+      fr: "Application d'analyse automatisée de questionnaires RH (Karasek, QVT, MBI) mesurant les risques psychosociaux. Pipeline complet : nettoyage des données, calcul des scores par dimension, génération de rapports. Déployée sur Streamlit et utilisée par plus de 200 utilisateurs mensuels, avec visualisations interactives et rapports exportables pour les équipes RH.",
+      en: "Automated HR questionnaire analysis application (Karasek, QVT, MBI) measuring psychosocial risks. Complete pipeline: data cleaning, score calculation by dimension, report generation. Deployed on Streamlit with 200+ monthly active users, featuring interactive visualizations and exportable reports for HR teams.",
     },
-    stack: ["Python", "Streamlit", "Pandas", "Numpy","Matplotlib", "Plotly"],
+    stack: ["Python", "Streamlit", "Pandas", "Numpy", "Matplotlib", "Plotly"],
     githubUrl: "https://github.com/fobahsalomon/survey-analytics-platform",
-    demoUrl: "https://surveylens.streamlit.app/", 
+    demoUrl: "https://surveylens.streamlit.app/",
     category: "RH / Analytics",
   },
   {
     id: "ipums-cps",
-    title: "IPUMS CPS  Women's Labor Force Participation",
+    title: "IPUMS CPS — Women's Labor Force Participation",
     featured: true,
     image: "assets/projects/ipums-cps-1.jpg",
     images: [
@@ -59,25 +59,25 @@ export const projects: Project[] = [
       "assets/projects/ipums-cps-3.jpg",
     ],
     description: {
-      fr: "Analyse longitudinale de la participation des femmes au marché du travail américain à partir des données IPUMS CPS (1980-2023). Modélisation par régression logistique multinomiale et séries temporelles pour identifier les facteurs structurels et cycliques. Visualisations interactives des tendances par cohorte, niveau d'éducation et statut matrimonial.",
-      en: "Longitudinal analysis of women's labor force participation in the US using IPUMS CPS data (1980-2023). Modeling via multinomial logistic regression and time series to identify structural and cyclical factors. Interactive visualizations of trends by cohort, education level, and marital status.",
+      fr: "Analyse de la participation des femmes au marché du travail américain à partir des microdonnées IPUMS CPS (1994-2024). Modélisation par régression logistique avec termes d'interaction, en tenant compte des poids d'enquête (ASECWT/WTFINL) et de la distinction entre échantillons ASEC et Basic Monthly. Résultats clés : les diplômées du supérieur ont 2,12× plus de chances de participer au marché du travail ; avoir des enfants réduit cette probabilité (×0,80), avec une pénalité combinée pour les mères diplômées.",
+      en: "Analysis of women's labor force participation in the US using IPUMS CPS microdata (1994-2024). Logistic regression modeling with interaction terms, accounting for survey weights (ASECWT/WTFINL) and the distinction between ASEC and Basic Monthly samples. Key findings: college graduates show 2.12× higher odds of labor force participation; having children reduces the odds (×0.80), with a compounded penalty for college-educated mothers.",
     },
-    stack: ["R", "IPUMS", "Tidyverse", "ggplot2", "Logistic Regression"],
+    stack: ["Python", "Pandas", "Statsmodels", "Scikit-learn", "IPUMS", "Logistic Regression"],
     githubUrl: "https://github.com/fobahsalomon/Women-lfp-cps",
     demoUrl: null,
     category: "Économie / Recherche",
   },
   {
     id: "anomaly-detection",
-    title: "Anomaly Detection  CICIDS2017",
+    title: "Anomaly Detection — CICIDS2017",
     featured: true,
     image: "assets/projects/anomaly-detection-1.jpg",
-    images:["assets/projects/anomaly-detection-1.jpg","assets/projects/anomaly-detection-2.jpg","assets/projects/anomaly-detection-3.jpg"],
+    images: ["assets/projects/anomaly-detection-1.jpg", "assets/projects/anomaly-detection-2.jpg", "assets/projects/anomaly-detection-3.jpg"],
     description: {
-      fr: "Système de détection d'intrusions réseau utilisant les datasets CICIDS2017 et NF-CSE-CIC-IDS2018-V2. Pipeline complet : prétraitement des flux réseau, sélection de caractéristiques, entraînement de modèles (Isolation Forest, One-Class SVM, Autoencoder). Évaluation sur métriques F1-score et AUC-ROC avec comparaison des approches supervisées et non supervisées.",
-      en: "Network intrusion detection system using CICIDS2017 and NF-CSE-CIC-IDS2018-V2 datasets. Complete pipeline: network flow preprocessing, feature selection, model training (Isolation Forest, One-Class SVM, Autoencoder). Evaluation on F1-score and AUC-ROC metrics with comparison of supervised and unsupervised approaches.",
+      fr: "Système de détection d'anomalies réseau entraîné sur CICIDS2017 et testé en généralisation sur NF-CSE-CIC-IDS2018-V2. Comparaison de modèles non supervisés : autoencodeurs, autoencodeurs variationnels (VAE) et Isolation Forest. Test de généralisation cross-dataset avec échantillonnage via DuckDB pour valider la robustesse des modèles face à des données réseau inédites.",
+      en: "Network intrusion detection system trained on CICIDS2017 and generalization-tested on NF-CSE-CIC-IDS2018-V2. Comparison of unsupervised models: autoencoders, variational autoencoders (VAE), and Isolation Forest. Cross-dataset generalization testing with DuckDB-based sampling to validate model robustness on unseen network data.",
     },
-    stack: ["Python", "TensorFlow", "Scikit-learn", "Pandas", "Network Analysis"],
+    stack: ["Python", "TensorFlow/Keras", "Scikit-learn", "Pandas", "DuckDB"],
     githubUrl: "https://github.com/fobahsalomon/Anomaly-Detection",
     demoUrl: null,
     category: "Cybersécurité / ML",
@@ -91,8 +91,8 @@ export const projects: Project[] = [
     image: "assets/projects/sarima-uk-1.jpg",
     images: ["assets/projects/sarima-uk-1.jpg", "assets/projects/sarima-uk-2.jpg"],
     description: {
-      fr: "Étude complète de séries temporelles sur les ventes trimestrielles de voitures en Angleterre (1977-2005), suivant la méthodologie Box-Jenkins de bout en bout : diagnostics de stationnarité, décomposition STL, identification et estimation SARIMA, validation des résidus et comparaison avec des benchmarks.",
-      en: "Full time series forecasting study on quarterly UK car sales (1977-2005), following the Box-Jenkins methodology end-to-end: stationarity diagnostics, STL decomposition, SARIMA identification and estimation, residual validation, and benchmark comparison.",
+      fr: "Étude complète de séries temporelles sur les ventes trimestrielles de voitures en Angleterre (1977-2005), suivant la méthodologie Box-Jenkins de bout en bout : diagnostics de stationnarité, décomposition STL, identification et estimation SARIMA, validation des résidus. Performance finale : RMSE 21,56, MAPE 4,66 % — mon projet technique le plus abouti.",
+      en: "Full time series forecasting study on quarterly UK car sales (1977-2005), following the Box-Jenkins methodology end-to-end: stationarity diagnostics, STL decomposition, SARIMA identification and estimation, residual validation. Final performance: RMSE 21.56, MAPE 4.66% — my strongest standalone technical project.",
     },
     stack: ["Python", "Statsmodels", "Pandas", "Matplotlib"],
     githubUrl: "https://github.com/fobahsalomon/time-series-sarima-forecasting",
@@ -106,10 +106,10 @@ export const projects: Project[] = [
     image: "assets/projects/rent-prediction-1.jpg",
     images: ["assets/projects/rent-prediction-1.jpg", "assets/projects/rent-prediction-2.jpg"],
     description: {
-      fr: "Prédiction des loyers résidentiels à Cocody à partir d'annonces CoinAfrique : scraping de milliers d'annonces, feature engineering (surface, localisation, commodités), comparaison de modèles (Random Forest, CatBoost, Régression linéaire multiple (modèle hédonique)).",
-      en: "Rent price prediction for Cocody (Abidjan) from CoinAfrique listings: web scraping of thousands of listings, feature engineering (area, location, amenities), model comparison (Random Forest, CatBoost, Multiple Linear Regression (hedonic model)).",
+      fr: "Prédiction des loyers résidentiels à Cocody à partir d'annonces CoinAfrique : scraping de milliers d'annonces, feature engineering (surface, localisation, commodités), comparaison de modèles (Random Forest, CatBoost, régression linéaire multiple / modèle hédonique).",
+      en: "Rent price prediction for Cocody (Abidjan) from CoinAfrique listings: web scraping of thousands of listings, feature engineering (area, location, amenities), model comparison (Random Forest, CatBoost, multiple linear regression / hedonic model).",
     },
-    stack: ["Python", "Scrapy", "Random Forest","CatBoost"],
+    stack: ["Python", "Scrapy", "Random Forest", "CatBoost"],
     githubUrl: "https://github.com/fobahsalomon/cocody-rental-market-analysis",
     demoUrl: null,
     category: "ML / WebScrapping",
@@ -119,10 +119,10 @@ export const projects: Project[] = [
     title: "Application de comptabilité OHADA",
     featured: false,
     image: "assets/projects/ohada.jpg",   // poster affiché avant chargement de la vidéo
-    video: "assets/projects/ohada.mp4",   //  placez votre .mp4 / .gif / .webm ici
+    video: "assets/projects/ohada.mp4",   // → placez votre .mp4 / .gif / .webm ici
     description: {
-      fr: "Application de gestion comptable conforme au référentiel OHADA (SYSCOHADA révisé). Génération automatique des livres comptables, balance, grand livre et états financiers. Système de plan comptable paramétrable avec exports PDF et Excel. Repository privé  code disponible sur demande.",
-      en: "Accounting management application compliant with the OHADA framework (revised SYSCOHADA). Automatic generation of accounting books, trial balance, general ledger, and financial statements. Configurable chart of accounts system with PDF and Excel exports. Private repository  code available on request.",
+      fr: "Application de gestion comptable conforme au référentiel OHADA (SYSCOHADA révisé). Génération automatique des écritures, du plan comptable, de la balance et du grand livre. Système de plan comptable paramétrable avec exports PDF et Excel. Repository privé — code disponible sur demande.",
+      en: "Accounting management application compliant with the OHADA framework (revised SYSCOHADA). Automatic generation of journal entries, chart of accounts, trial balance, and general ledger. Configurable chart of accounts system with PDF and Excel exports. Private repository — code available on request.",
     },
     stack: ["Python", "Django", "Docker", "PostgreSQL"],
     githubUrl: null, // Repo privé
@@ -136,8 +136,8 @@ export const projects: Project[] = [
     image: "assets/projects/northmart-1.jpg",
     images: ["assets/projects/northmart-1.jpg", "assets/projects/northmart-2.jpg"],
     description: {
-      fr: "Segmentation clients RFM (Récence, Fréquence, Montant) couplée à une prévision des ventes par modèle SARIMA pour un retailer nord-américain. Identification des segments à haute valeur, activation des clients dormants et optimisation des campagnes marketing ciblées. Dashboard interactif de suivi des KPIs commerciaux.",
-      en: "RFM customer segmentation (Recency, Frequency, Monetary) combined with SARIMA sales forecasting for a North American retailer. Identification of high-value segments, dormant customer reactivation, and optimization of targeted marketing campaigns. Interactive dashboard for tracking commercial KPIs.",
+      fr: "Segmentation clients RFM par K-Means (k=4, silhouette 0,31) identifiant 4 segments — Champions, Fidèles, À risque, Perdus — pour un retailer nord-américain. Prévision des ventes par SARIMA sur les 5 principaux marchés hors UK, avec test de stationnarité ADF et sélection par grid search (ARIMA(1,1,1)).",
+      en: "RFM customer segmentation via K-Means (k=4, silhouette 0.31) identifying 4 segments — Champions, Loyal, At risk, Lost — for a North American retailer. SARIMA sales forecasting on the top-5 non-UK markets, with ADF stationarity testing and grid search selection (ARIMA(1,1,1)).",
     },
     stack: ["Python", "Streamlit", "Scikit-learn", "Statsmodels"],
     githubUrl: "https://github.com/fobahsalomon/NorthMart_RFM",
@@ -159,7 +159,6 @@ export const projects: Project[] = [
     demoUrl: "https://lookerstudio.google.com/reporting/78e4dbfe-1ee5-4dc0-8d80-fd33e0355545",
     category: "Humanitaire / Data",
   },
-  
 ];
 
 // Helper pour récupérer les projets en vedette
