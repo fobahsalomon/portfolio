@@ -17,7 +17,7 @@ export default function HeroSection() {
         aria-hidden
         className="hidden sm:block pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 select-none text-center font-serif font-bold uppercase leading-none whitespace-nowrap"
         style={{
-          fontSize: "18vw",
+          fontSize: "11vw",
           color: "transparent",
           WebkitTextStroke: "1px rgba(139,99,71,0.14)",
         }}
