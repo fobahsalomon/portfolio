@@ -15,9 +15,9 @@ export default function HeroSection() {
       {/* Background watermark text */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 select-none text-center font-serif font-bold uppercase leading-none whitespace-nowrap"
+        className="hidden sm:block pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 select-none text-center font-serif font-bold uppercase leading-none whitespace-nowrap"
         style={{
-          fontSize: "18vw",
+          fontSize: "11vw",
           color: "transparent",
           WebkitTextStroke: "1px rgba(139,99,71,0.14)",
         }}
@@ -127,7 +127,7 @@ export default function HeroSection() {
       {/* Scroll hint */}
       <a
         href="#about"
-        className="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-copper/60 hover:text-copper transition-colors animate-bounce-hint"
+        className="flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-copper/60 hover:text-copper transition-colors animate-bounce-hint"
         aria-label={t.hero.scrollHint}
       >
         <span className="text-[0.6rem] uppercase tracking-[0.2em]">{t.hero.scrollHint}</span>

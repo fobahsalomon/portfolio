@@ -57,10 +57,10 @@ export default function AboutSection() {
                   className="flex items-center gap-4 py-4 border-b border-copper/[.12] last:border-b-0 last:pb-0 first:pt-0"
                 >
                   <row.icon className="w-4 h-4 text-copper flex-shrink-0" />
-                  <span className="text-[0.65rem] uppercase tracking-[0.12em] text-copper min-w-[110px]">
+                  <span className="text-[0.65rem] uppercase tracking-[0.12em] text-copper min-w-[110px] flex-shrink-0">
                     {row.label}
                   </span>
-                  <span className="text-[0.88rem] text-ink/75">{row.value}</span>
+                  <span className="text-[0.88rem] text-ink/75 min-w-0 flex-1 break-words">{row.value}</span>
                 </div>
               ))}
             </div>
