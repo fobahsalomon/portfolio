@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
 import type { Project } from "@/data/projects";
 
@@ -65,9 +66,12 @@ export default function ProjectMedia({ project, fill = false, scaleOnHover = fal
   // - Clic sur l'image        → ne ferme PAS
   // - X toujours visible en haut à droite
   // - Flèches sur les côtés du fond sombre
-  const lightbox = lightboxOpen ? (
+  // Rendue via un portail vers <body> : certains ancêtres (ex. Reveal, qui
+  // anime "transform") créent un containing block qui casserait le
+  // "position: fixed" et décentrerait la lightbox si elle restait dans l'arbre.
+  const lightbox = lightboxOpen ? createPortal(
     <div
-      className="lightbox-overlay fixed inset-0 z-[9999] bg-black/88 flex items-center justify-center"
+      className="lightbox-overlay fixed inset-0 z-[9999] bg-black/[.88] flex items-center justify-center"
       onClick={() => setLightboxOpen(false)}
     >
       {/* ── Bouton fermer — haut-droite du viewport ── */}
@@ -128,21 +132,24 @@ export default function ProjectMedia({ project, fill = false, scaleOnHover = fal
           />
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   ) : null;
 
-  // ── Hint zoom (loupe au survol) ──────────────────────────────────────────
+  // ── Hint zoom (loupe au survol, style Bing) ──────────────────────────────
   const zoomHint = (
-    <div className="absolute top-2 right-2 w-6 h-6 bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10 pointer-events-none">
-      <ZoomIn className="w-3.5 h-3.5" />
-    </div>
+    <>
+      <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/15 transition-colors duration-300 pointer-events-none" />
+      <div className="absolute top-2 right-2 w-6 h-6 bg-black/40 text-white flex items-center justify-center opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-10 pointer-events-none">
+        <ZoomIn className="w-3.5 h-3.5" />
+      </div>
+    </>
   );
 
   // ── Classes de base ──────────────────────────────────────────────────────
   const wrapBase = fill ? "absolute inset-0" : "relative w-full h-full";
-  const imgClass = `w-full h-full object-cover object-center ${
-    scaleOnHover ? "group-hover:scale-[1.04] transition-transform duration-500" : ""
-  }`;
+  const hoverScaleClass = scaleOnHover ? "transition-transform duration-500 ease-out group-hover:scale-[1.06]" : "";
+  const imgClass = `w-full h-full object-cover object-center ${hoverScaleClass}`;
 
   // ── Video / GIF ──────────────────────────────────────────────────────────
   if (project.video) {
@@ -152,7 +159,7 @@ export default function ProjectMedia({ project, fill = false, scaleOnHover = fal
         <div className={`${wrapBase} group cursor-zoom-in overflow-hidden`} onClick={() => openLightbox(0)}>
           {isGif
             ? <img src={project.video} alt={project.title} className={imgClass} />
-            : <video src={project.video} poster={project.image} autoPlay loop muted playsInline className="w-full h-full object-cover object-center" />
+            : <video src={project.video} poster={project.image} autoPlay loop muted playsInline className={`w-full h-full object-cover object-center ${hoverScaleClass}`} />
           }
           {zoomHint}
         </div>
@@ -175,7 +182,7 @@ export default function ProjectMedia({ project, fill = false, scaleOnHover = fal
             key={`${project.id}-${slide}`}
             src={imgs[slide]}
             alt={`${project.title} — ${slide + 1}`}
-            className="slide-fade-in w-full h-full object-cover object-center"
+            className={`slide-fade-in w-full h-full object-cover object-center ${hoverScaleClass}`}
             onError={(e) => { (e.target as HTMLImageElement).style.opacity = "0"; }}
           />
 
