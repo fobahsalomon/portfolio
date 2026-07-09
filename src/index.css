@@ -89,3 +89,24 @@
 .animate-bounce-hint {
   animation: bounce-hint 2s ease-in-out infinite;
 }
+
+/* Diaporama : fondu + Ken Burns subtil au changement de slide */
+@keyframes slide-fade-in {
+  from { opacity: 0; transform: scale(1.05); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.slide-fade-in {
+  animation: slide-fade-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Lightbox */
+@keyframes lightbox-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes lightbox-img-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.lightbox-overlay { animation: lightbox-in 0.18s ease both; }
+.lightbox-img     { animation: lightbox-img-in 0.22s cubic-bezier(0.22, 1, 0.36, 1) both; }
