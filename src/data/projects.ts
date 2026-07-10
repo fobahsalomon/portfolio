@@ -40,8 +40,8 @@ export const projects: Project[] = [
       "assets/projects/surveylens-3.jpg",
     ],
     description: {
-      fr: "Application d'analyse automatisée de questionnaires RH (Karasek, QVT, MBI) mesurant les risques psychosociaux. Pipeline complet : nettoyage des données, calcul des scores par dimension, génération de rapports. Déployée sur Streamlit et utilisée par plus de 200 utilisateurs mensuels, avec visualisations interactives et rapports exportables pour les équipes RH.",
-      en: "Automated HR questionnaire analysis application (Karasek, QVT, MBI) measuring psychosocial risks. Complete pipeline: data cleaning, score calculation by dimension, report generation. Deployed on Streamlit with 200+ monthly active users, featuring interactive visualizations and exportable reports for HR teams.",
+      fr: "Application d'analyse automatisée de questionnaires RH (Karasek, QVT, MBI) mesurant les risques psychosociaux, développée pour YODAN. Pipeline complet : nettoyage des données, calcul des scores par dimension, génération de rapports. Utilisée au quotidien par un collaborateur de YODAN pour la production de ses analyses et rapports internes. Une version démo publique est déployée sur Streamlit.",
+      en: "Automated HR questionnaire analysis application (Karasek, QVT, MBI) measuring psychosocial risks, built for YODAN. Complete pipeline: data cleaning, score calculation by dimension, report generation. Used daily in production by a YODAN staff member for their internal analysis and reporting. A public demo version is deployed on Streamlit.",
     },
     stack: ["Python", "Streamlit", "Pandas", "Numpy", "Matplotlib", "Plotly"],
     githubUrl: "https://github.com/fobahsalomon/survey-analytics-platform",
